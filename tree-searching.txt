@@ -1,0 +1,11 @@
+def remove_algorithms(front_tier):
+  # base on algorithms choose a node in front tier and remove this
+  return front_tier.pop()
+def tree_search: -> solution | Exception:
+  front_tier = [init_state]
+  while true:
+    if front_tier = []: raise Exception("No solution")
+
+    chosen_node = remove_algorithms(front_tier)
+    if chosen_node == goal: return chosen_node # Solution base on path
+    front_tier.extends(chosen_node.expand_tree) # Expand may be base on graph

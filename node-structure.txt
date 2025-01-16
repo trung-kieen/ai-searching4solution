@@ -1,0 +1,6 @@
+NODE {
+  State: state that node is correspond
+  Parrent: node in search tree/gragh that generate this node
+  Action: action apply to parrent to generate this node
+  PathCost: the cost, denote g(n) = cost from init state to current state
+}

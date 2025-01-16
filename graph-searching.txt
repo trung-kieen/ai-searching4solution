@@ -1,0 +1,22 @@
+
+def remove_algorithms(front_tier):
+  return front_tier.pop()
+
+def graph_search(): -> solution | Exception:
+  front_tier = [init_state]
+  visited = set() # or can be call explored set, can use dict to trace route
+  while True:
+    if front_tier == []: raise Exception("No solution")
+    chosen_node = remove_algorithms(front_tier)
+    if chosen == goal: return chosen_node  # Trace route base on visited
+
+
+    visited.add(chosen_node)
+
+    """
+    How to know which neighbor of chosen node?
+    Using adj list if it is graph
+    """
+    for neighbor in chosen.neighbors:
+      if neighbor not in front_tier and neighbor not in visited:
+        front_tier.append(neighbor)
